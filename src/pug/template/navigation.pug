@@ -1,0 +1,88 @@
+mixin navigation()
+	mixin icon(name,mod)
+		- mod = mod || ''
+		svg(class="icon icon-" + name + ' ' + mod)
+			use(xlink:href="svg/sprite/sprite.svg#" + name)
+
+	nav.nav
+		ul.nav-list
+			li.nav-list__item
+				a(href='news-1.html').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_palette', 'palette-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--palette
+						span.nav-icon-container-hover__icon
+							+icon('ic_palette', 'palette-mod')
+						span.nav-icon-container-hover__description Palette
+
+			li.nav-list__item
+				a(href='#').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_music', 'music-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--music
+						span.nav-icon-container-hover__icon
+							+icon('ic_music', 'music-mod')
+						span.nav-icon-container-hover__description music
+
+			li.nav-list__item
+				a(href='#').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_camera', 'camera-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--camera
+						span.nav-icon-container-hover__icon
+							+icon('ic_camera', 'camera-mod')
+						span.nav-icon-container-hover__description Photo
+
+			li.nav-list__item
+				a(href='#').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_video', 'video-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--video
+						span.nav-icon-container-hover__icon
+							+icon('ic_video', 'video-mod')
+						span.nav-icon-container-hover__description Video
+
+			li.nav-list__item
+				a(href='#').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_suitcase', 'suitcase-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--suitcase
+						span.nav-icon-container-hover__icon
+							+icon('ic_suitcase', 'suitcase-mod')
+						span.nav-icon-container-hover__description Business
+
+			li.nav-list__item
+				a(href='#').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_airplane', 'airplane-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--airplane
+						span.nav-icon-container-hover__icon
+							+icon('ic_airplane', 'airplane-mod')
+						span.nav-icon-container-hover__description airplane
+
+			li.nav-list__item
+				a(href='#').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_bag', 'bag-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--bag
+						span.nav-icon-container-hover__icon
+							+icon('ic_bag', 'bag-mod')
+						span.nav-icon-container-hover__description bag
+
+			li.nav-list__item
+				a(href='#').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_plus', 'plus-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--plus
+						span.nav-icon-container-hover__icon
+							+icon('ic_plus', 'plus-mod')
+						span.nav-icon-container-hover__description add
+
+			li.nav-list__item.nav-list__item--cog
+				a(href='#').nav-list__item__link
+					div.nav-icon-container
+						+icon('ic_cog', 'cog-mod')
+					div.nav-icon-container-hover.nav-icon-container-hover--cog
+						span.nav-icon-container-hover__icon
+							+icon('ic_cog', 'cog-mod')
+						span.nav-icon-container-hover__description settings

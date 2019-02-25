@@ -1,0 +1,144 @@
+.nav{
+	position: fixed;
+	top: 78px;
+	left: 0;
+	background-color: #fff;
+	border-right: 1px solid #e7e7e7;
+	height: 100vh;
+	z-index: 1;
+}
+.nav-list{
+	background-color: #fbfbfb;
+	&__item{
+		@media (max-height:812px) {
+			&:last-child{
+				background-color: #fff;
+				position: absolute;
+				bottom: 78px;
+				margin-top: 0;
+			}
+		}
+		&:last-child{
+			margin-top: 290px;
+			background-color: #fff;
+			border-top: 1px solid #e7e7e7;
+			@include media-mexin($tablet-media){
+				position: static;
+				margin-top: 0;
+			}
+		}
+
+		&__link{
+			position: relative;
+
+			&:hover{
+				.nav-icon-container{
+
+				}
+				.nav-icon-container-hover{
+					left: 0;
+					top: -71px;
+					transition: .3s;
+					background-color: #424242;
+					opacity: 1;
+					@media (max-height:812px) {
+						height: 50px;
+						top: -51px;
+					}
+					&--palette{
+						background-color: #14b9d6;
+					}
+					&--music{
+						background-color: #e76049;
+					}
+					&--camera{
+						background-color: #2eb398;
+					}
+					&--video{
+						background-color: #90899c;
+					}
+					&--suitcase{
+						background-color: #5692b1;
+					}
+					&--airplane{
+						background-color: #f9b704;
+					}
+					&--bag{
+						background-color: #dd1787;
+					}
+					&--plus{
+						background-color: #e76049;
+					}
+					&--cog{
+						background-color: #585858;
+					}
+					@include flex-mixin(flex-start, center, row);
+					&__icon{
+						height: 70px;
+						width: 70px;
+						@include flex-mixin(center, center, row);
+						@include media-mexin($desktop-min--media){
+							width: 50px;
+							height: 50px;
+						}
+						.icon{
+							color: #fff;
+						}
+					}
+					&__description{
+						@include flex-mixin(center, center, row);
+						color: #fff;
+						font-family: 'Montserrat-Bold';
+						font-size: 14px;
+						text-transform: uppercase;
+					}
+
+				}
+			}
+		}
+	}
+}
+.nav-icon-container{
+	height: 70px;
+	width: 70px;
+	@include flex-mixin(center, center, row);
+	border-bottom: 1px solid #e7e7e7;
+	position: relative;
+	z-index: 0;
+
+	@media (max-height:812px) {
+		height: 50px;
+	}
+	@include media-mexin($desktop-min--media){
+		width: 50px;
+	}
+}
+.nav-icon-container-hover{
+	top: -71px;
+	left: -158px;
+	transition: .3s;
+	position: absolute;
+	z-index: 1;
+	height: 70px;
+	width: 158px;
+	opacity: 0;
+	@include flex-mixin(flex-start, center, row);
+	@media (max-height:812px) {
+		height: 50px;
+		top: -51px;
+	}
+	&__icon{
+		height: 70px;
+		width: 70px;
+		@media (max-height:812px) {
+			height: 50px;
+		}
+		@include media-mexin($desktop-min--media){
+			width: 50px;
+		}
+		@include flex-mixin(center, center, row);
+	}
+	&__description{
+		@include flex-mixin(center, center, row);
+	}
+}

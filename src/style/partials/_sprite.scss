@@ -1,0 +1,68 @@
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	font-size: 21px;
+	position: relative;
+	&.grey_mod {
+		color:#525252;
+	}
+	&.facebook_mod{
+		color: #3360b2;
+	}
+	&.twitter-mod{
+		color: #08b0e0;
+	}
+	&.google-mod{
+		color: #ef5c5c;
+	}
+	&.pinterest_mod{
+		color: #ae0a0a;
+	}
+	&.palette-mod{
+		color: #14b9d6;
+	}
+	&.music-mod{
+		color: #e76049;
+	}
+	&.camera-mod{
+		color: #2eb398;
+	}
+	&.video-mod{
+		color: #90899c;
+	}
+	&.suitcase-mod{
+		color: #5692b1;
+	}
+	&.airplane-mod{
+		color: #f9b704;
+	}
+	&.bag-mod{
+		color: #dd1787;
+	}
+	&.plus-mod{
+		color: #e76049;
+	}
+	&.cog-mod{
+		color: #585858;
+	}
+	&.right-thin_mod{
+		color: #fff;
+	}
+	&.cancel-mod{
+		font-size: 14px;
+		color: #1d1d1d;
+	}
+	&.back-mod{
+		font-size: 14px;
+		color: #6b6b6b;
+	}
+	&.next-mod{
+		font-size: 14px;
+		color: #6b6b6b;
+	}
+	&:hover{
+		color: #fff;
+	}
+}

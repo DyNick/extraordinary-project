@@ -1,0 +1,95 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="svg/sprite/sprite.svg#" + name)
+
+div.row.row--news
+	div.container-box
+		div.container-box__news-content
+			div.news-content-image-box
+				img.news-content-image-box__img(src='img/main/earth.jpg' alt='dance')
+
+			div.news-content
+				aside.news-content__aside
+					div.news-content__aside__item.news-content__aside__item--date
+						div.aside-item-title.aside-item-title--date Date
+						div.aside-item-value 27 July 2013
+
+					div.news-content__aside__item.news-content__aside__item--comment
+						div.aside-item-title Comments
+						div.aside-item-value 28 Comments
+
+					div.news-content__aside__item.news-content__aside__item--share
+						div.aside-item-title Share
+						div.aside-item-value
+							a(href='#')
+								+icon('ic_facebook', 'facebook_mod')
+							a(href='#')
+								+icon('ic_twitter', 'twitter-mod')
+							a(href='#')
+								+icon('ic_google+', 'google-mod')
+							a(href='#')
+								+icon('ic_pinterest', 'pinterest_mod')
+				div.news-content__description
+					div.news-content__description__inner
+						h2.news-content-title All sail being set, he now cast loose the
+							| life-line, reserved.
+						p.news-content-sub-title With reference to the whaling scene shortly to be described, as well as for the better understanding of all similar
+							| scenes elsewhere presented, I have here to speak of the magical, sometimes horrible whale-line.
+						div.news-content-body
+							p.news-content-body__text Of late years the Manilla rope has in the American fishery almost entirely
+								| superseded hemp as a material for whale-lines; for, though not so durable
+								| as hemp, it is stronger, and far more soft and elastic; and I will add (since
+								| there is an aesthetics in all things), is much more handsome and becoming
+								| to the boat, than hemp. Hemp is a dusky, dark fellow, a sort of Indian; but
+								| Manilla is as a golden-haired Circassian to behold.
+							div.news-content-body__img-box
+								img.news-content-body-image(src='img/main/earth.jpg')
+								div.news-content-body-image-description Of late years the Manilla rope has in the American fishery almost
+									| entirely superseded hemp as a material for whale-line
+
+							p.news-content-body__text The whale-line is only two-thirds of an inch in thickness. At first sight, you
+								| would not think it so strong as it really is. By experiment its one and fifty
+								| yarns will each suspend a weight of one hundred and twenty pounds; so
+								| that the whole rope will bear a strain nearly equal to three tons. In length,
+								| the common sperm whale-line measures something over two hundred
+								| fathoms. Towards the stern of the boat it is spirally coiled away in the tub,
+								| not like the worm-pipe of a still though, but so as to form one round,
+								| cheese-shaped mass of densely bedded "sheaves," or layers of concentric
+								| spiralizations, without any hollow but the "heart," or minute vertical tube
+								| formed at the axis of the cheese.
+							p.news-content-body__text Soon all the boats but Starbuck's were dropped; all the boat-sails set all the
+								| paddles plying; with rippling swiftness, shooting to leeward; and Ahab
+								| heading the onset. A pale, death-glimmer lit up Fedallah's sunken eyes; a
+								| hideous motion. The line originally used in the fishery was of the best hemp
+								| slightly vapoured with tar, not impregnated with it, as in the case of
+								| ordinary ropes; for while tar, as ordinarily used, makes the hemp more
+								| pliable to the rope-maker, and also renders the rope itself more convenient
+								| to the sailor for common ship use; yet, not only would the ordinary quantity
+								| too much stiffen the whale-line for the close coiling to which it must be
+								| subjected; but as most seamen are beginning to learn, tar in general by no
+								| means adds to the rope's durability or strength, however much it may give
+								| it compactness and gloss.
+							p.news-content-body__text Both ends of the line are exposed; the lower end terminating in an eye-
+								| splice or loop coming up from the bottom against the side of the tub, and
+								| hanging over its edge completely disengaged from everything. This
+								| arrangement of the lower end is necessary on two accounts. First: In order
+								| to facilitate the fastening to it of an additional line from a neighboring boat,
+								| in case the stricken whale should sound so deep as to threaten to carry off
+								| the entire line originally attached to the harpoon. In these instances, the
+								| whale of courseis shifted like a mug of ale, as it were, from the one boat to
+								| the other; though the first boat always hovers at hand to assist its consort.
+								| Second: This arrangement is indispensable for common safety's sake.
+								| As the least tangle or kink in the coiling would, in running out, infallibly take
+								| somebody's arm, leg, or entire body off, the utmost precaution is used in
+								| stowing the line in its tub. Some harpooneers will consume almost an entire
+								| morning in this business, carrying the line high aloft and then reeving it
+								| downwards through a block towards the tub, so as in the act of coiling to
+								| free it from all possible wrinkles and twists.
+		div.container-box__arrows-content
+			a.container-box__arrows-content__link(href='#')
+				+icon('ic_cancel', 'cancel-mod')
+			a.container-box__arrows-content__link(href='#')
+				+icon('ic_back', 'back-mod')
+			a.container-box__arrows-content__link(href='#')
+				+icon('ic_next', 'next-mod')

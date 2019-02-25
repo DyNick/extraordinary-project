@@ -1,0 +1,46 @@
+mixin header()
+	mixin icon(name,mod)
+		- mod = mod || ''
+		svg(class="icon icon-" + name + ' ' + mod)
+			use(xlink:href="svg/sprite/sprite.svg#" + name)
+
+	header.header
+		div.container.container--header
+			a.logo-desctop-link(href='/')
+				img.logo(src='img/logo.png' alt='logo')
+			a.logo-mob-link(href='/')
+				img.logo.logo--mob(src='img/logo-mob.png' alt='logo-mobile')
+			ul.header-nav-list
+				li.header-nav-list__item.header-nav-list__item--share
+					a(href='#').header-nav-list__item__link
+						span.word share
+					ul.share-list
+						li.share-list__item
+							a(href='#').share-list__item__link
+								span.share-icon
+									+icon('ic_facebook', 'facebook_mod')
+								span.sahre-description Facebook
+						li.share-list__item
+							a(href='#').share-list__item__link
+								span.share-icon
+									+icon('ic_twitter', 'twitter-mod')
+								span.sahre-description Twitter
+						li.share-list__item
+							a(href='#').share-list__item__link
+								span.share-icon
+									+icon('ic_google+', 'google-mod')
+								span.sahre-description Google+
+						li.share-list__item
+							a(href='#').share-list__item__link
+								span.share-icon
+									+icon('ic_pinterest', 'pinterest_mod')
+								span.sahre-description Pinterest
+
+
+
+				li.header-nav-list__item.header-nav-list__item--search
+					a(href='#').header-nav-list__item__link
+						+icon('ic_search','grey_mod')
+				li.header-nav-list__item.header-nav-list__item--account
+					a(href='#').header-nav-list__item__link
+						+icon('ic_user','grey_mod')

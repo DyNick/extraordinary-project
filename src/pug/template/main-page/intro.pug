@@ -1,0 +1,160 @@
+mixin intro()
+	mixin icon(name,mod)
+		- mod = mod || ''
+		svg(class="icon icon-" + name + ' ' + mod)
+			use(xlink:href="svg/sprite/sprite.svg#" + name)
+	section.section-news
+		#content.container.container--news
+			.row.row--news
+				.column
+					.column__item
+						div.column__item__image-box
+							img.item__image(src='img/main/dance.jpg' alt='dance')
+							div.item__image-hover
+							a.item__image-hover-button(href='news-1.html')
+								span.item__image-hover-button__icon
+									+icon('ic_right-thin', 'right-thin_mod')
+								span.item__image-hover-button__description read more
+
+						div.column__item__description-box.column__item__description-box--green
+							div.min-info-row
+								div.min-info-row__calendar
+									+icon('ic_calendar', 'calendar_mod')
+									span.min-info-row__calendar__date 25 July 2013
+								div.min-info-row__comment
+									+icon('ic_comment', 'comment_mod')
+									span.min-info-row__comment__comment 2 Comments
+							a.news-item-link(href='news-1.html')
+								h2.title-news All sail being set, he now cast loose the life-line, reserved.
+								div.news-description Soon all the boats but Starbuck's were dropped; all the boat-sails
+									|set all the paddles plying; with rippling swiftness, shooting to
+									|leeward; and Ahab heading the onset. A pale, death-glimmer lit up
+									|Fedallah's sunken eyes; a hideous motion.
+
+					.column__item
+						div.column__item__image-box
+							img.item__image(src='img/main/women-1.jpg' alt='Fashion season')
+							div.item__image-hover
+							a.item__image-hover-button(href='news-2.html')
+								span.item__image-hover-button__icon
+									+icon('ic_right-thin', 'right-thin_mod')
+								span.item__image-hover-button__description read more
+						div.column__item__description-box.column__item__description-box--green
+							div.min-info-row
+								div.min-info-row__calendar
+									+icon('ic_calendar', 'calendar_mod')
+									span.min-info-row__calendar__date 25 July 2013
+								div.min-info-row__comment
+									+icon('ic_comment', 'comment_mod')
+									span.min-info-row__comment__comment 2 Comments
+							a.news-item-link(href='news-2.html')
+								h2.title-news All sail being set, he now cast loose the life-line, reserved.
+								div.news-description Soon all the boats but Starbuck's were dropped; all the boat-sails
+									| set all the paddles plying; with rippling swiftness, shooting to
+									| leeward; and Ahab heading the onset. A pale, death-glimmer lit up
+									| Fedallah's sunken eyes; a hideous motion.
+				.column
+					.column__item
+						div.column__item__image-box
+							img.item__image(src='img/main/man-1.jpg' alt='Robin Thicke')
+							div.item__image-hover
+							a.item__image-hover-button(href='news-3.html')
+								span.item__image-hover-button__icon
+									+icon('ic_right-thin', 'right-thin_mod')
+								span.item__image-hover-button__description read more
+
+						div.column__item__description-box.column__item__description-box--red
+							div.min-info-row
+								div.min-info-row__calendar
+									+icon('ic_calendar', 'calendar_mod')
+									span.min-info-row__calendar__date 25 July 2013
+								div.min-info-row__comment
+									+icon('ic_comment', 'comment_mod')
+									span.min-info-row__comment__comment 2 Comments
+							a.news-item-link(href='news-3.html')
+								h2.title-news Robin Thicke: Longest Hot 100
+									|Reign This Year
+								div.news-description The line originally used in the fishery was of the best hemp, slightly
+									|vapoured with tar, not impregnated with it, as in the case of
+									|ordinary ropes; for while tar, as ordinarily used, makes the hemp
+									|more pliable to the rope-maker, Of late years the Manilla rope has
+									|in the American fishery almost entirely superseded hemp as.
+					.column__item
+						div.column__item__image-box
+							img.item__image(src='img/main/street.jpg' alt='A Strange Brand of Happy')
+							div.item__image-hover
+							a.item__image-hover-button(href='news-4.html')
+								span.item__image-hover-button__icon
+									+icon('ic_right-thin', 'right-thin_mod')
+								span.item__image-hover-button__description read more
+
+						div.column__item__description-box.column__item__description-box--grey
+							div.min-info-row
+								div.min-info-row__calendar
+									+icon('ic_calendar', 'calendar_mod')
+									span.min-info-row__calendar__date 25 July 2013
+								div.min-info-row__comment
+									+icon('ic_comment', 'comment_mod')
+									span.min-info-row__comment__comment 2 Comments
+							a.news-item-link(href='news-4.html')
+								h2.title-news A Strange Brand of Happy
+								div.news-description An aimless bachelor loses his job and finds himself chasing the
+									|same girl (his new life coach) that his manipulative ex-boss is after
+									|as well. The boys are spurred on by a rag tag group of retirees in
+									|need of some action.
+
+				.column
+					.column__item
+						div.column__item__image-box
+							img.item__image(src='img/main/man-2.jpg' alt='Yankees Player')
+							div.item__image-hover
+							a.item__image-hover-button(href='news-5.html')
+								span.item__image-hover-button__icon
+									+icon('ic_right-thin', 'right-thin_mod')
+								span.item__image-hover-button__description read more
+
+						div.column__item__description-box.column__item__description-box--blue
+							div.min-info-row
+								div.min-info-row__calendar
+									+icon('ic_calendar', 'calendar_mod')
+									span.min-info-row__calendar__date 25 July 2013
+								div.min-info-row__comment
+									+icon('ic_comment', 'comment_mod')
+									span.min-info-row__comment__comment 2 Comments
+							a.news-item-link(href='news-5.html')
+								h2.title-news A-Rod, A Fraud, And A Waste Of
+									|Yankees Money, Public's Time
+								div.news-description Enough already.  I can’t take it no more.  Free us from enslavement
+									|to all this banter. OK, so my fit of anger this morning is not steroid-
+									|induced…though that would be fitting in light of recent discussions.
+									|Baseball talk of late has centered upon performance enhancing
+									|drugs.  Biogenesis has become the new BALCO.  A-Rod the new
+									|Barry Bonds. And all I hear from various media types are
+									|questions like.
+					.column__item
+						div.column__item__image-box
+							img.item__image(src='img/main/earth.jpg' alt='Earth')
+							div.item__image-hover
+							a.item__image-hover-button(href='news-6.html')
+								span.item__image-hover-button__icon
+									+icon('ic_right-thin', 'right-thin_mod')
+								span.item__image-hover-button__description read more
+
+						div.column__item__description-box.column__item__description-box--blue-light
+							div.min-info-row
+								div.min-info-row__calendar
+									+icon('ic_calendar', 'calendar_mod')
+									span.min-info-row__calendar__date 25 July 2013
+								div.min-info-row__comment
+									+icon('ic_comment', 'comment_mod')
+									span.min-info-row__comment__comment 2 Comments
+							a.news-item-link(href='news-6.html')
+								h2.title-news The whale-line is only two-thirds
+									|of an inch in thickness
+								div.news-description At first sight, you would not think it so strong as it really is. By
+									|experiment its one and fifty yarns will each suspend a weight of
+									|one hundred and twenty pounds; so that the whole rope will bear
+									|a strain nearly equal to three tons.
+
+
+

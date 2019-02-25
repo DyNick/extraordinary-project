@@ -1,0 +1,79 @@
+//colors
+$grey: #242424;
+
+//variable for base font
+$base-font-size :16px;
+
+/*
+	Width variables
+*/
+$container-width : 1600px;
+$laptop-width :1280px;
+$laptop-min-width :1200px;
+$desktop-width : 1024px;
+$desktop-min-width : 998px;
+$tablet-width :768px;
+$mobile-big-width : 480px;
+$mobile-small-width : 320px;
+
+
+$small-media: "(max-width: #{$mobile-small-width})" ;
+$medium-media: " (max-width: #{$mobile-big-width})" ;
+$tablet-media: "(max-width: #{$tablet-width})" ;
+$desktop-media: "(max-width: #{$desktop-width})" ;
+$desktop-min--media: "(max-width: #{$desktop-min-width})" ;
+$container-media: "(max-width: #{$container-width})" ;
+$laptop-media: "(max-width: #{$laptop-width})" ;
+$laptop-min-media: "(max-width: #{$laptop-min-width})" ;
+
+//Mixins
+
+@mixin media-mexin($media) {
+	@media only screen and #{$media} {
+		@content;
+	}
+}
+
+
+@mixin flex-mixin($justify, $align, $flow){
+	display: flex;
+	justify-content: $justify;
+	align-items:$align;
+	flex-flow: $flow;
+}
+
+@mixin button-mixin($bg-color, $color, $paddings) {
+	padding: $paddings;
+	background-color: $bg-color;
+	border: 0;
+	outline: none;
+	font-weight: 600;
+	color: $color;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*=================default===============*/
+body{
+	font-family:sans-serif;
+}
+a{
+	text-decoration:none;
+}
+
+.clearfix{
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.container{
+	width: $container-width;
+	margin: 0 auto;
+	@include media-mexin ($container-media) {
+		width: 100%;
+	}
+}
+
